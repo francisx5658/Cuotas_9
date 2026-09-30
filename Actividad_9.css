@@ -1,0 +1,85 @@
+/* Reset básico de márgenes y tipografía */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fondo de la página y centrado de la tarjeta */
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Tarjeta principal que envuelve el contenido */
+body {
+    flex-direction: column;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+/* Estilo para el campo de entrada (input) */
+input[type="number"] {
+    width: 220px;
+    padding: 10px 14px;
+    font-size: 1rem;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    margin-bottom: 12px;
+}
+
+input[type="number"]:focus {
+    border-color: #3498db;
+}
+
+/* Estilo para el botón de verificación */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Estilo para el mensaje de resultado */
+#resultado {
+    margin-top: 25px;
+    font-size: 1.3rem;
+    color: #2c3e50;
+    background-color: #ffffff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #3498db;
+    transition: all 0.3s ease;
+}
